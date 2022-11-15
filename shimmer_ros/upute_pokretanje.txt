@@ -1,0 +1,12 @@
+Shimmer koraci:
+1. hcitool scan -> očitati MAC adresu shimmera i kopirati
+2. Pokrenuti komandu unutar shimmer_ros foldera (obavezno ./ ispred setup): ./setup/bind_shimmer_to_rfcomm.sh [ubaciti MAC adresu bez uglatih zagrada]
+3. Ako je jedan shimmer: roslaunch shimmer_ros publish_emg_data.launch
+
+
+
+3a. Ako su 2 shimmera: roslaunch shimmer_ros publish_emg_data.launch num:=2
+4. Pokrenuti Plotjuggler: roslaunch shimmer_ros plotjuggler_shimmer.launch
+4a. U plotjuggler odabrati MAximum size of arrays: 1000, buffer: 60. Prekidi koje vidite su samo prisutni na dijagramu.
+
+
